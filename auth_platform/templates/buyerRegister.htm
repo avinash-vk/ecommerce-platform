@@ -1,0 +1,30 @@
+<div id="container">
+BUYER REGISTER
+  <form method="POST" action = "">
+      {% csrf_token %}
+      <div class="input-group" align-content="center">
+          <div class="input--style-1" placeholder="NAME" align="center" >
+          {{form.username}}
+          </div>
+      </div>
+
+      <div class="input-group input" placeholder = "email" align="center">
+          {{form.email}}
+      </div>
+
+      <div class="input-group" align="center">
+          <div class="input--style-1" type="text" placeholder="Password" name="res_code">
+              {{form.password1}}
+          </div>
+      </div>
+
+      <div class="input-group" align="center">
+          <div class="input--style-1" type="text" placeholder="Password" name="res_code">
+              {{form.password2}}
+          </div>
+      </div>
+      <div class="p-t-20" align="center">
+          <button class="btn btn--radius btn btn-primary btn-xl btn--green orange-button" type="submit">Submit</button>
+      </div>
+  </form>
+</div>
